@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" sizes="16x16" type="image/png">
+    <title>إضافة منتج جديد</title>
+
+    <link rel="stylesheet" href="assests/bootstrap-4.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/font-awsome/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <!--الصفحة الرئيسية-->
+    <div id="page__index">
+        <div class="container-fluid">
+
+            <!--قائمة التنقل العلوية-->
+            <nav class="navbar navbar-expand-lg">
+                <a href="." class="navbar-brand">
+                    <img src="images/logo-admin.png" alt="شعار لوحة التحكم">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ml-auto p-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/home-icon.png" alt="الرئيسية">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/products.png" alt="المنتجات">
+                                المنتجات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/users.png" alt="المستخدمين">
+                                المستخدمين
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/orders.png" alt="الطلبات الواردة">
+                                الطلبات الواردة
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--قائمة التنقل الفرعية-->
+            <nav aria-label="breadcrumb" class="custom-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">لوحة التحكم</a></li>
+                  <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                  <li class="breadcrumb-item active">أضف منتج جديد</li>
+                </ol>
+            </nav>
+
+            <!--قائمة التنقل الجانبية-->
+            <div class="row">
+                <div class="col-lg-3 col-md-12 " id="bg-list__group">
+                    <ul class="list-group custom-list-group">
+                        <li class="list-group-item active">
+                            <a href="add-product.html">
+                                <i class="fas fa-plus"></i>
+                                أضف منتج جديد
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="search-product.html">
+                                <i class="fas fa-search"></i>
+                                ابحث عن منتج
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="compte-user.html">
+                                <i class="fas fa-user-circle"></i>
+                                حسابي الشخصي
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="config-user.html">
+                                <i class="fas fa-user-cog"></i>
+                                إعدادات الحساب
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <i class="fas fa-power-off"></i>
+                                تسجيل الخروج
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--حقول الإدخــال-->
+                <div class="col-lg-9 col-md 12">
+                    <form id="custom_footer">
+                        <!--حقل إدخال العنوان-->
+                        <div class="form-group">
+                            <label>أدخل عنوان المنتج</label>
+                            <input type="text" class="form-control custom-form-control-1x" placeholder="اكتب عنوان المنتج" maxlength="75">
+                            <small class="form-text text-muted custom_text_muted">يجب ألا يتجاوز عدد الحروف 75 حرفاً كأقصى حد</small>
+                        </div>
+                        <div class="form-group">
+                            <label>قم بإدخـال تفاصيل ووصف المنتج</label>
+                            <Textarea id="editor" name="editor" class="form-control" rows="10"></Textarea>
+                            <small class="form-text text-muted custom_text_muted">مـلاحظة : يجب مراعاة معايير SEO حتى تتمكن من تصدر نتائج البحث </small>
+                        </div>
+                    </form> 
+                </div>    
+            </div>
+
+            <!--تصنيف المنتوج والسعر --> 
+            <div class="row">
+                <div class="col-lg-3 col-md-12"></div>
+                <!--تصنيف المنتج-->
+                <div class="col-lg-3 col-md-12">
+                    <div class="title_rating_1X">يرجى اختيار تصنيف المنتج</div>
+                    <select class="form-control custom-form-control-2x">
+                        <option value="rating" selected disabled>اختر نصنيف المنتج</option>
+                        <option value="Men">منتجات رجالية</option>
+                        <option value="Woman" >منتجات نسائية</option>
+                        <option value="Electro">منتجات ّإلكترونية</option>
+                        <option value="Kids" >مستلزمات الأطفال</option>
+                        <option value="Kitchen">مستلزمات المطبخ</option>
+                    </select>
+                </div>
+                <!--سعر المنتج-->
+                <div class="col-lg-3 col-md-12">
+                    <div class="title_price title_rating_1X">ادخل السعر المناسب للمنتج</div>
+                    <div class="input-group custom-input-group">
+                        <input type="number" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">$</span>
+                        </div>
+                    </div>
+                </div>
+                <!--ارفع صور المنتج-->
+                <div class="col-lg-3 col-md-12">
+                    <div class="title__uploadimg title_rating_1X">قم برفع صور المنتج</div>
+                    <div class="form-group custom-form-uplaod">
+                        <form>
+                            <input type="file" class="form-control-file">
+                        </form>
+                    </div>    
+                </div>
+            </div>
+
+            <!--زر إرســال النموذج-->
+            <div class="text-left">
+                <button class="btn btn-primary custom-btn" type="submit">
+                    نشر الآن 
+                </button>
+                <button class="btn btn-primary custom-btn" type="submit">
+                    حفظ بالمسودة 
+                </button>
+            </div>    
+        </div>
+
+        <!--ذيل الصفحة-->
+        <footer class="footer-page">
+            <div class="support">
+                <h5 class="custom-heading-support text-center">
+                    <a href="#">
+                        <i class="fas fa-life-ring"></i>
+                        مركز المساعدة والدعم الفني
+                    </a>
+                </h5>
+            </div>
+        </footer>
+    </div>    
+
+
+    <script src="assests/font-awsome/js/all.min.js"></script>
+    <script src="assests/Jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="assests/Jquery/Jquery-3.5.1.js"></script>
+    <script src="assests/popper.js/popper.min.js"></script>
+    <script src="assests/bootstrap-4.5/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+
+
+    <script>
+
+        //ClassEditor.create(document.getElementById('my_editor'));
+        CKEDITOR.replace('editor', {
+            language: 'ar',
+            uiColor: '#A5A5A5f'
+        });
+
+    </script>
+</body>
+</html>

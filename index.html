@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" sizes="16x16" type="image/png">
+    <title>لوحة التحكم</title>
+
+    <link rel="stylesheet" href="assests/bootstrap-4.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/font-awsome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!--الصفحة الرئيسية-->
+    <div id="page__index">
+        <div class="container-fluid">
+            <!--قائمة التنقل العلوية-->
+            <nav class="navbar navbar-expand-lg">
+                <a href="." class="navbar-brand">
+                    <img src="images/logo-admin.png" alt="شعار لوحة التحكم">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ml-auto p-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/home-icon.png" alt="الرئيسية">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/products.png" alt="المنتجات">
+                                المنتجات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/users.png" alt="المستخدمين">
+                                المستخدمين
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/icons-1/orders.png" alt="الطلبات الواردة">
+                                الطلبات الواردة
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="row">
+                <!--آخر ما حصل-->
+                <div class="col-lg-6 col-md-12">
+                   <div class="Last-happened small">
+                   <span class="number_title">
+                       <img src="images/icons-1/orders.png" alt="عدد الطلبات">
+                       15
+                       طلب
+                   </span>
+                   <span class="number_title">
+                       <img src="images/icons-1/users.png" alt="عدد الزوار">
+                       144
+                       زائر
+                   </span>
+                   <span class="number_title">
+                       <img src="images/icons-1/money.png" alt="الربح الحالي">
+                       $120
+                       ربح 
+                   </span>
+
+                   </div>
+               </div>
+           </div>
+
+            <div class="row">
+                <!--قائمة التنقل الجانبية-->
+                <div class="col-lg-3 col-md-12 " id="bg-list__group">
+                    <ul class="list-group custom-list-group">
+                        <li class="list-group-item">
+                            <a href="add-product.html">
+                                <i class="fas fa-plus"></i>
+                                أضف منتج جديد
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="search-product.html">
+                                <i class="fas fa-search"></i>
+                                ابحث عن منتج
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="compte-user.html">
+                                <i class="fas fa-user-circle"></i>
+                                حسابي الشخصي
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="config-user.html">
+                                <i class="fas fa-user-cog"></i>
+                                إعدادات الحساب
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <i class="fas fa-power-off"></i>
+                                تسجيل الخروج
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--عبارة الترحيب-->
+                <div class="col-lg-3 col-md-12">
+                    <div class="content-page">
+                        <div class="title__welcome">
+                            <h3 class="custom-heading-welcome text-center">
+                                صباح الخير 
+                                <br>
+                                أتمنى لك يوماً مميز في عملك .
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!--آخر ما حصل-->
+                <div class="col-lg-6 col-md-12 d-none d-lg-block">
+                    <div class="Last-happened">
+                    <span class="number_title">
+                        <img src="images/icons-1/orders.png" alt="عدد الطلبات">
+                        15
+                        طلب
+                    </span>
+                    <span class="number_title">
+                        <img src="images/icons-1/users.png" alt="عدد الزوار">
+                        144
+                        زائر
+                    </span>
+                    <span class="number_title">
+                        <img src="images/icons-1/money.png" alt="الربح الحالي">
+                        $120
+                        ربح اليوم
+                    </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+               <div class="col-3"></div>
+               <!--قائمة المهام-->
+               <div class="col-lg-9 col-md-12">
+                    <div id="bg-tasks">
+                        <div class="title_tasks">
+                            <h4 class="custom-heading-task">مهام يجب تنفيذها !</h4>
+                        </div>
+                        <div class="content_tasks">
+                            <p>
+                                <span>+26</span>
+                                طلب يحتاج إلى تأكيد الدفع
+                                <a href="#">عرض التفاصيل</a>
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <p>
+                                <span>+48</span>
+                                طلب يحتاج إلى الشحن
+                                <a href="#">عرض التفاصيل</a>
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <p>
+                                <span>+17</span>
+                                مراجعة للمنتجات
+                                <a href="#">عرض التفاصيل</a>
+                            </p>
+                        </div>
+                        <div class="content_tasks">
+                            <p>
+                                <span>+23</span>
+                                مستخدم في قائمة الإنتظار
+                                <a href="#">عرض التفاصيل</a>
+                            </p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <!--سطر فـارغ-->
+                <div class="col-3"></div>
+                <!--رســائل واردة-->
+                <div class="col-lg-4 col-md-12">
+                    <div id="bg-msg">
+                        <div class="orders_msg">
+                            <h4 class="custom-heading-msg text-center">الـرسائل الواردة</h4>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/profile.png" alt="مستخدم">
+                                <span class="name_user">
+                                    <a href="#">
+                                        أحمد مترجي |
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    <i class="far fa-clock"></i>
+                                    منذ 15 ثوانِ
+                                </span>
+                                <p class="text__msg">مرحباً بك أخي، اطلعت على متجركم وأردت شراء منتجات كثيرة بالجملة، فهل هذا متاح ؟</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/profile.png" alt="مستخدم">
+                                <span class="name_user">
+                                    <a href="#">
+                                         علي حمدان |
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    <i class="far fa-clock"></i>
+                                    منذ 14 دقيقة
+                                </span>
+                                <p class="text__msg">السلام عليكم، هل من عروض جديدة على متجركم ؟</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images/profile.png" alt="مستخدم">
+                                <span class="name_user">
+                                    <a href="#">
+                                        محمد مسعود |
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    <i class="far fa-clock"></i>
+                                    الثلاثـاء 21:45 مساءً  
+                                </span>
+                                <p class="text__msg">أهلاً بكم، أريد تغيير منتوج  من فضلكم !</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body custom-card-body">
+                                <a href="#">
+                                    عرض جميع الرسائل
+                                    <i class="fas fa-arrow-left"></i>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--اقتباسات اليوم-->
+                <div class="col-lg-5 col-md-12">
+                    <div class="Quote-today">
+                        <div class="Today_quote">
+                            <h4 class="custom-heading-quote">اقتباسات اليوم</h4>
+                            <p>
+                                <q>
+                                    يظهر اهتمامي في الحياة من خلال جعل نفسي عظيما ، جعلها تحديات مختلفة غير ممكن الوصول لها و المحاولة للتغلب عليها
+                                    | Richard Branson
+                                </q>
+                            </p>
+                            <p>
+                                <q>
+                                    كن على قدر عال من الجودة ، بعض الناس غير معتادين على بيئة يكون فيها التفوق متوقعاً
+                                    | Steve Jobs
+                                </q>
+                            </p>
+                            <p>
+                                <q>
+                                    النجاح معلم حقير ، أنه يغري الأشخاص الأذكياء بالتفكير أنهم لن يفشلوا
+                                    | Bill Gates
+                                </q>
+                            </p>
+                            <p>
+                                <q>
+                                    تأسيس صداقة بناءا على عمل يعتبر صفقة رابحة أكثر من تأسيس عمل بناءاً على صداقة
+                                    | John D. Rockefeller
+                                </q>
+                            </p>
+                            <p>
+                                <q>
+                                    الحظ مقسوم من العرق ، كلما عرقت أكثر كلما كنت محظوظاً أكثر
+                                    | Ray Kroc
+                                </q>
+                            </p>
+                            <p>
+                                <q>
+                                    علامتك التجارية هي ما يتكلم به الناس عنك عندما لا تكون في غرفتك
+                                    | Jeff Bezos
+                                </q>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card-body custom-card-body">
+                                <a href="#">
+                                    عرض جميع الاقتباسات
+                                    <i class="fas fa-arrow-left"></i>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3"></div>
+                <!--المستخدمين -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="users_customers">
+                        <h4 class="custom-heading-customers text-center">آخر المستخدمين نشاطاً</h4>
+                        <!--آخر مبيعات المستخدمين-->
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/profile.png" alt="مستخدم">
+                                </a>
+                                <span class="name__customer">حمدان - </span>
+                                <span class="usename">ali.me@</span> 
+                                <span class="order__user">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    3 مبيعات
+                                </span>  
+                                <span class="money__order">
+                                    <i class="fas fa-coins"></i>
+                                    140$
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/profile.png" alt="مستخدم">
+                                </a>
+                                <span class="name__customer">مصطفى - </span>
+                                <span class="usename">mus.me@</span> 
+                                <span class="order__user">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    2 مبيعات
+                                </span>  
+                                <span class="money__order">
+                                    <i class="fas fa-coins"></i>
+                                    98$
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/profile.png" alt="مستخدم">
+                                </a>
+                                <span class="name__customer">زكرياء - </span>
+                                <span class="usename">zaki.me@</span> 
+                                <span class="order__user">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    2 مبيعات
+                                </span>  
+                                <span class="money__order">
+                                    <i class="fas fa-coins"></i>
+                                    75$
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/profile.png" alt="مستخدم">
+                                </a>
+                                <span class="name__customer">أمين - </span>
+                                <span class="usename">amine.me@</span> 
+                                <span class="order__user">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    5 مبيعات
+                                </span>  
+                                <span class="money__order">
+                                    <i class="fas fa-coins"></i>
+                                    65.15$
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/profile.png" alt="مستخدم">
+                                </a>
+                                <span class="name__customer">محمد - </span>
+                                <span class="usename">mou7.me@</span> 
+                                <span class="order__user">
+                                    <i class="fas fa-shipping-fast"></i>
+                                   8 مبيعات
+                                </span>  
+                                <span class="money__order">
+                                    <i class="fas fa-coins"></i>
+                                    87$
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body custom-card-body">
+                                <a href="#">
+                                    اعرض جميع المستخدين النشيطين
+                                    <i class="fas fa-arrow-left"></i>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--آخر التقييمات للمنتجات-->
+                <div class="col-lg-5 col-md-12">
+                    <div class="latest_ratings">
+                        <h4 class="custom-heading-latest text-center">آخر التقييمات الواردة</h4>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/Charge-cable-samsung.jpg" alt="مستخدم">
+                                </a>
+                                <span class="title_product">شـاحن للهاتف - سامسونج</span>
+                                <div class="rating-icons float-left ">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>شـاحن أصلي لهواتف سـامسونج مميز من النوع الفريد ... شكراً لكم على هذا المنتوج</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/Iphone-7.jpg" alt="مستخدم">
+                                </a>
+                                <span class="title_product">هـاتف آيفون 7</span>
+                                <div class="rating-icons float-left ">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>في صراحة هذا هاتف مميز جداً ولها ميزات رائعة</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/watch.jpg" alt="مستخدم">
+                                </a>
+                                <span class="title_product">ساعة يدوية من النوع الأصيل</span>
+                                <div class="rating-icons float-left ">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                </div>
+                                <p>كنت متخوف من شراء هذا المنتوج، لكن بعد شراءه تأكدت بأنه منتوج خيالي... شكراً لك</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="images/watch.jpg" alt="مستخدم">
+                                </a>
+                                <span class="title_product">ساعة يدوية من النوع الأصيل</span>
+                                <div class="rating-icons float-left ">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>كنت متخوف من شراء هذا المنتوج، لكن بعد شراءه تأكدت بأنه منتوج خيالي... شكراً لك</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body custom-card-body">
+                                <a href="#">
+                                    اعرض جميع التقييمات
+                                    <i class="fas fa-angle-double-left"></i>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ذيل الصفحة-->
+        <footer class="footer-page">
+            <div class="support">
+                <h5 class="custom-heading-support text-center">
+                    <a href="#">
+                        <i class="fas fa-life-ring"></i>
+                        مركز المساعدة والدعم الفني
+                    </a>
+                </h5>
+            </div>
+        </footer>
+    </div>    
+
+    <script src="assests/font-awsome/js/all.min.js"></script>
+    <script src="assests/Jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="assests/Jquery/Jquery-3.5.1.js"></script>
+    <script src="assests/popper.js/popper.min.js"></script>
+    <script src="assests/bootstrap-4.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
